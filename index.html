@@ -1,0 +1,1466 @@
+<!DOCTYPE html>
+<html id="XenForo" lang="en-US" dir="LTR" class="notranslate Public NoJs LoggedIn NoSidebar  Responsive" xmlns:fb="http://www.facebook.com/2008/fbml">
+<head>
+<meta charset="utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<link rel="shortcut icon" href="/favicon.png"/>
+<title>Plugins | PocketMine Forums</title>
+<base href="https://forums.pocketmine.net/"/>
+<script>
+			if(window.location.host != ("forums.pocke"+"tmine.net")){
+				window.location = "ht"+"tps://forums.poc"+"ketmine.net";
+				if ($.browser.msie){
+					document.execCommand("Stop");
+				}else{
+					window.stop();
+				}
+			}
+			
+			setInterval(function(){ga('send', 'event', 'online');},270000);
+		</script>
+<noscript><style>.JsOnly,.jsOnly{display:none!important;}</style></noscript>
+<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	  ga('create', 'UA-37722441-3', {
+	  	'userId': '21941', 
+		'cookieDomain': 'forums.pocketmine.net',
+		'sampleRate': 100,
+		'siteSpeedSampleRate': 5,
+		'allowAnchor': false
+	  });
+	  ga('set', 'anonymizeIp', true);
+	  ga('require', 'displayfeatures');
+	  ga('require', 'linkid', 'linkid.js');
+	  ga('send', 'pageview');
+	</script>
+<script type='text/javascript'>
+		function placeAd(id, ob, width, height){
+			var adOb = document.createElement("div");
+			adOb.setAttribute("id", id);
+			adOb.setAttribute("class", "blockAd");
+			adOb.setAttribute("style", "width:"+ width +"px !important;height:" + height + "px;");
+			ob.appendChild(adOb);
+			googletag.cmd.push(function(){googletag.display(id);});
+			adsLoaded.push('DFP_' + id);
+		}
+		
+		function placeBSAd(id, ob, width, height){
+			var adOb = document.createElement("div");
+			adOb.setAttribute("id", "bsap_" + id);
+			adOb.setAttribute("class", "blockAd bsarocks bsap_96668e97a578c53e1b16187c41353cce");
+			if(typeof width === "number"){
+				adOb.setAttribute("style", "width:"+ width +"px !important;height:" + height + "px;");
+			}else{
+				adOb.setAttribute("style", "width:"+ width +" !important;height:" + height + ";");
+			}
+			ob.appendChild(adOb);
+			adsLoaded.push('BSA_' + id);
+		}
+		
+		
+	</script>
+<script src="//www.googletagservices.com/tag/js/gpt.js" async></script>
+<script src="//s3.buysellads.com/ac/bsa.js" async></script>
+<script src="//platform.twitter.com/widgets.js" async></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script>if (!window.jQuery) { document.write('<scr'+'ipt type="text/javascript" src="/js/jquery/jquery-1.11.0.min.js"><\/scr'+'ipt>'); }</script>
+<script src="/js/xenforo/xenforo.js?_v=d243d450"></script>
+<script src="/js/jquery.scrolldepth.min.js"></script>
+<script>
+		var adHoverStatus = 0;
+		$(function(){
+		  $.scrollDepth({
+		  	minHeight: 300,
+		  	percentage: true,
+		  	userTiming: true,
+		  	pixelDepth: false		  	
+		  });
+		});
+	</script>
+<link rel="stylesheet" href="/css.php?css=xenforo,form,public,flexile,&amp;style=8&amp;dir=LTR&amp;d=1425150136"/>
+<link rel="stylesheet" href="css.php?css=nat_public_css,rating,resource_list,resource_list_mini&amp;style=8&amp;dir=LTR&amp;d=1425150136"/>
+<link rel="alternate" type="application/rss+xml" title="RSS feed for PocketMine Forums" href="forums/-/index.rss"/>
+<link rel="next" href="plugins/?page=2"/>
+<meta name="keywords" content="Minecraft,PocketMine,Pocket Mine,PocketMine-MP,Server,Pocket Edition,MCPE,Online,Forum,PHP,Plugin,API"/>
+<meta name="google" content="notranslate"/>
+<link rel="apple-touch-icon" href="/favicon.png"/>
+<meta name="apple-mobile-web-app-capable" content="yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent"/>
+<meta name="apple-mobile-web-app-title" content="PM Forums"/>
+<meta name="format-detection" content="telephone=no"/>
+<link rel="apple-touch-startup-image" href="/startup.png">
+<style>html{-webkit-text-size-adjust:100%;}</style>
+</head>
+<body>
+<header>
+<div id="header">
+<div id="logoBlock">
+<div class="pageWidth">
+<div class="pageContent">
+<div id="logo"><a href="https://forums.pocketmine.net/">
+<span></span>
+<img src="https://cdn.pocketmine.net/img/PocketMine-h-64.png" alt="PocketMine Forums"/>
+</a></div>
+<div id="flexile_header_content">
+<a href="https://twitter.com/PocketMine" class="twitter-follow-button" data-show-count="true">Follow @PocketMine</a>
+</div>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+<div id="navigation" class="withSearch">
+<div class="pageContent">
+<nav>
+<div class="navTabs pageWidth">
+<ul class="publicTabs">
+ 
+ 
+<li class="navTab portal Popup PopupControl PopupClosed">
+<a href="https://forums.pocketmine.net/" class="navLink">Home</a>
+<a href="https://forums.pocketmine.net/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu portalTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Home</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="watched/threads">Watched Threads</a></li>
+<li><a href="recent-activity/">Recent Activity</a></li>
+<li><a href="find-new/threads">What's New?</a></li>
+<li><a href="help/">Help</a></li>
+</ul>
+</div>
+</li>
+ 
+<li class="navTab forums Popup PopupControl PopupClosed">
+<a href="https://forums.pocketmine.net/forums/" class="navLink">Forums</a>
+<a href="https://forums.pocketmine.net/forums/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu forumsTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Forums</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="forums/-/mark-read?date=1429490998" class="OverlayTrigger">Mark Forums Read</a></li>
+<li><a href="search/?type=post">Search Forums</a></li>
+<li><a href="watched/forums">Watched Forums</a></li>
+<li><a href="watched/threads">Watched Threads</a></li>
+<li><a href="find-new/posts" rel="nofollow">New Posts</a></li>
+</ul>
+</div>
+</li>
+ 
+<li class="navTab resources selected">
+<a href="https://forums.pocketmine.net/plugins/" class="navLink">Plugins</a>
+<a href="https://forums.pocketmine.net/plugins/" class="SplitCtrl" rel="Menu"></a>
+<div class="tabLinks resourcesTabLinks">
+<div class="pageWidth">
+<div class="primaryContent menuHeader">
+<h3>Plugins</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="search/?type=resource_update">Search Plugins</a></li>
+<li><a href="plugins/authors">Most Active Authors</a></li>
+<li><a href="plugins/watched-categories">Watched Categories</a></li>
+<li><a href="plugins/watched">Watched Plugins</a></li>
+</ul>
+</div>
+</div>
+</li>
+ 
+<li class="navTab nodetab8 PopupClosed">
+<a href="https://forums.pocketmine.net/link-forums/bugs.8/" class="navLink">Bugs</a>
+</li>
+<li class="navTab nodetab12 PopupClosed">
+<a href="https://forums.pocketmine.net/servers/" class="navLink">Servers</a>
+</li>
+<li class="navTab nodetab10 PopupClosed">
+<a href="https://forums.pocketmine.net/link-forums/get-pocketmine-mp.10/" class="navLink">Get PocketMine-MP</a>
+</li>
+<li class="navTab nodetab14 PopupClosed">
+<a href="https://forums.pocketmine.net/chat/" class="navLink">Chat/IRC</a>
+</li>
+ 
+<li class="navTab members Popup PopupControl PopupClosed">
+<a href="https://forums.pocketmine.net/members/" class="navLink">Members</a>
+<a href="https://forums.pocketmine.net/members/" class="SplitCtrl" rel="Menu"></a>
+<div class="Menu JsOnly tabMenu membersTabLinks">
+<div class="primaryContent menuHeader">
+<h3>Members</h3>
+<div class="muted">Quick Links</div>
+</div>
+<ul class="secondaryContent blockLinksList">
+<li><a href="members/">Notable Members</a></li>
+<li><a href="online/">Current Visitors</a></li>
+<li><a href="recent-activity/">Recent Activity</a></li>
+</ul>
+</div>
+</li>
+ 
+<li class="navTab navigationHiddenTabs Popup PopupControl PopupClosed" style="display:none">
+<a rel="Menu" class="navLink NoPopupGadget"><span class="menuIcon">Menu</span></a>
+<div class="Menu JsOnly blockLinksList primaryContent" id="NavigationHiddenMenu"></div>
+</li>
+ 
+</ul>
+<ul class="visitorTabs">
+ 
+<li class="navTab account Popup PopupControl PopupClosed ">
+<a href="account/" class="navLink accountPopup NoPopupGadget" rel="Menu"><strong class="accountUsername">TheLucyClub</strong>
+<strong class="itemCount ResponsiveOnly Zero" id="VisitorExtraMenu_Counter">
+<span class="Total">0</span>
+<span class="arrow"></span>
+</strong>
+</a>
+<div class="Menu JsOnly" id="AccountMenu">
+<div class="primaryContent menuHeader">
+<a href="members/thelucyclub.21941/" class="avatar Av21941m NoOverlay plainImage" title="View your profile" data-avatarhtml="true"><span class="img m" style="background-image: url('data/avatars/m/21/21941.jpg?1428848544')"></span></a>
+<h3><a href="members/thelucyclub.21941/" class="concealed" title="View your profile">TheLucyClub</a></h3>
+<div class="muted">Active Member</div>
+<ul class="links">
+<li class="fl"><a href="members/thelucyclub.21941/">Your Profile Page</a></li>
+</ul>
+</div>
+<div class="menuColumns secondaryContent">
+<ul class="col1 blockLinksList">
+<li><a href="account/personal-details">Personal Details</a></li>
+<li><a href="account/signature">Signature</a></li>
+<li><a href="account/contact-details">Contact Details</a></li>
+<li><a href="account/privacy">Privacy</a></li>
+<li><a href="account/preferences" class="OverlayTrigger">Preferences</a></li>
+<li><a href="account/alert-preferences">Alert Preferences</a></li>
+<li><a href="account/avatar" class="OverlayTrigger" data-cacheOverlay="true">Avatar</a></li>
+<li><a href="account/external-accounts">External Accounts</a></li>
+<li><a href="account/security">Password</a></li>
+<li><a href="account/two-factor">Two-Factor Authentication</a></li>
+</ul>
+<ul class="col2 blockLinksList">
+<li><a href="account/news-feed">Your News Feed</a></li>
+<li><a href="conversations/">Conversations
+<strong class="itemCount Zero" id="VisitorExtraMenu_ConversationsCounter">
+<span class="Total">0</span>
+</strong></a></li>
+<li><a href="account/alerts">Alerts
+<strong class="itemCount Zero" id="VisitorExtraMenu_AlertsCounter">
+<span class="Total">0</span>
+</strong></a></li>
+<li><a href="account/likes">Likes You've Received</a></li>
+<li><a href="search/member?user_id=21941">Your Content</a></li>
+<li><a href="account/following">People You Follow</a></li>
+<li><a href="account/ignored">People You Ignore</a></li>
+</ul>
+</div>
+<div class="menuColumns secondaryContent">
+<ul class="col1 blockLinksList">
+<li>
+<form action="account/toggle-visibility" method="post" class="AutoValidator visibilityForm">
+<label><input type="checkbox" name="visible" value="1" class="SubmitOnChange" checked="checked"/>
+Show Online Status</label>
+<input type="hidden" name="_xfToken" value="21941,1429490998,8b445de5fd2916a8e6e2a93aac9cc1b170f8601d"/>
+</form>
+</li>
+</ul>
+<ul class="col2 blockLinksList">
+<li><a href="logout/?_xfToken=21941%2C1429490998%2C8b445de5fd2916a8e6e2a93aac9cc1b170f8601d" class="LogOut">Log Out</a></li>
+</ul>
+</div>
+<form action="members/thelucyclub.21941/post" method="post" class="sectionFooter statusPoster AutoValidator" data-optInOut="OptIn">
+<textarea name="message" class="textCtrl StatusEditor UserTagger Elastic" placeholder="Update your status..." rows="1" cols="40" style="height:18px" data-statusEditorCounter="#visMenuSEdCount" data-nofocus="true"></textarea>
+<div class="submitUnit">
+<span id="visMenuSEdCount" title="Characters remaining"></span>
+<input type="submit" class="button primary MenuCloser" value="Post"/>
+<input type="hidden" name="_xfToken" value="21941,1429490998,8b445de5fd2916a8e6e2a93aac9cc1b170f8601d"/>
+<input type="hidden" name="return" value="1"/>
+</div>
+</form>
+</div>
+</li>
+ 
+<li class="navTab inbox Popup PopupControl PopupClosed ">
+<a href="conversations/" rel="Menu" class="navLink NoPopupGadget">Inbox
+<strong class="itemCount Zero" id="ConversationsMenu_Counter" data-text="You have %d new unread conversation(s).">
+<span class="Total">0</span>
+<span class="arrow"></span>
+</strong>
+</a>
+<div class="Menu JsOnly navPopup" id="ConversationsMenu" data-contentSrc="conversations/popup" data-contentDest="#ConversationsMenu .listPlaceholder">
+<div class="menuHeader primaryContent">
+<h3>
+<span class="Progress InProgress"></span>
+<a href="conversations/" class="concealed">Conversations</a>
+</h3>
+</div>
+<div class="listPlaceholder"></div>
+<div class="sectionFooter">
+<a href="conversations/add" class="floatLink">Start a New Conversation</a>
+<a href="conversations/">Show All...</a>
+</div>
+</div>
+</li>
+ 
+<li class="navTab alerts Popup PopupControl PopupClosed">
+<a href="account/alerts" rel="Menu" class="navLink NoPopupGadget">Alerts
+<strong class="itemCount Zero" id="AlertsMenu_Counter" data-text="You have %d new alert(s).">
+<span class="Total">0</span>
+<span class="arrow"></span>
+</strong>
+</a>
+<div class="Menu JsOnly navPopup" id="AlertsMenu" data-contentSrc="account/alerts-popup" data-contentDest="#AlertsMenu .listPlaceholder" data-removeCounter="#AlertsMenu_Counter">
+<div class="menuHeader primaryContent">
+<h3>
+<span class="Progress InProgress"></span>
+<a href="account/alerts" class="concealed">Alerts</a>
+</h3>
+</div>
+<div class="listPlaceholder"></div>
+<div class="sectionFooter">
+<a href="account/alert-preferences" class="floatLink">Alert Preferences</a>
+<a href="account/alerts">Show All...</a>
+</div>
+</div>
+</li>
+</ul>
+</div>
+<span class="helper"></span>
+</nav>
+</div>
+</div>
+<div id="searchBar" class="pageWidth">
+<span id="QuickSearchPlaceholder" title="Search">Search</span>
+<fieldset id="QuickSearch">
+<form action="search/search" method="post" class="formPopup">
+<div class="primaryControls">
+ 
+<input type="search" name="keywords" value="" class="textCtrl" placeholder="Search..." results="0" title="Enter your search and hit enter" id="QuickSearchQuery"/>
+ 
+</div>
+<div class="secondaryControls">
+<div class="controlsWrapper">
+ 
+<dl class="ctrlUnit">
+<dt></dt>
+<dd><ul>
+<li><label><input type="checkbox" name="title_only" value="1" id="search_bar_title_only" class="AutoChecker" data-uncheck="#search_bar_thread"/> Search titles only</label></li>
+</ul></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt><label for="searchBar_users">Posted by Member:</label></dt>
+<dd>
+<input type="text" name="users" value="" class="textCtrl AutoComplete" id="searchBar_users"/>
+<p class="explain">Separate names with a comma.</p>
+</dd>
+</dl>
+<dl class="ctrlUnit">
+<dt><label for="searchBar_date">Newer Than:</label></dt>
+<dd><input type="date" name="date" value="" class="textCtrl" id="searchBar_date"/></dd>
+</dl>
+<dl class="ctrlUnit">
+<dt></dt>
+<dd><ul>
+<li>
+<label><input type="checkbox" name="type[resource_update][null]" value="" checked="checked" id="search_bar_resources"/> Search plugins only</label>
+<ul>
+<li><label><input type="checkbox" name="type[resource_update][is_resource]" value="1"/> Search only plugin descriptions</label>
+</ul></li>
+</ul></dd>
+</dl>
+</div>
+ 
+<dl class="ctrlUnit submitUnit">
+<dt></dt>
+<dd>
+<input type="submit" value="Search" class="button primary Tooltip" title="Find Now"/>
+<div class="Popup" id="commonSearches">
+<a rel="Menu" class="button NoPopupGadget Tooltip" title="Useful Searches" data-tipclass="flipped"><span class="arrowWidget"></span></a>
+<div class="Menu">
+<div class="primaryContent menuHeader">
+<h3>Useful Searches</h3>
+</div>
+<ul class="secondaryContent blockLinksList">
+ 
+<li><a href="find-new/posts?recent=1" rel="nofollow">Recent Posts</a></li>
+<li><a href="search/member?user_id=21941&amp;content=thread">Your Threads</a></li>
+<li><a href="search/member?user_id=21941&amp;content=post">Your Posts</a></li>
+<li><a href="search/member?user_id=21941&amp;content=profile_post">Your Profile Posts</a></li>
+ 
+</ul>
+</div>
+</div>
+<a href="search/" class="button moreOptions Tooltip" title="Advanced search">More...</a>
+</dd>
+</dl>
+</div>
+<input type="hidden" name="_xfToken" value="21941,1429490998,8b445de5fd2916a8e6e2a93aac9cc1b170f8601d"/>
+</form>
+</fieldset>
+</div>
+</div>
+</header>
+<div id="headerMover">
+<div id="content" class="resource_index">
+<div class="pageWidth">
+<div class="pageContent">
+ 
+<div class="breadBoxTop withTopCtrl">
+<div class="topCtrl"><a href="plugins/add" class="callToAction OverlayTrigger"><span>Submit Plugin</span></a></div>
+<nav>
+<fieldset class="breadcrumb">
+<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"> </a>
+<div class="boardTitle"><strong>PocketMine Forums</strong></div>
+<span class="crumbs">
+<span class="crust homeCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://forums.pocketmine.net/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Home</span></a>
+<span class="arrow"><span></span></span>
+</span>
+<span class="crust selectedTabCrumb" itemscope="itemscope" itemtype="http://data-vocabulary.org/Breadcrumb">
+<a href="https://forums.pocketmine.net/plugins/" class="crumb" rel="up" itemprop="url"><span itemprop="title">Plugins</span></a>
+<span class="arrow"><span>&gt;</span></span>
+</span>
+</span>
+</fieldset>
+</nav>
+</div>
+<!--[if lt IE 8]>
+							<p class="importantMessage">You are using an out of date browser. It  may not display this or other websites correctly.<br />You should upgrade or use an <a href="https://www.google.com/chrome" target="_blank">alternative browser</a>.</p>
+						<![endif]-->
+ 
+<div class="titleBar">
+<h1>Plugins</h1>
+</div>
+ 
+<div class="resourceListBlock">
+<div class="resourceListSidebar">
+<div class="secondaryContent categoryList">
+<h3>Categories</h3>
+<ol>
+<li class="">
+<a href="plugins/categories/admin-tools.3/" title="Administrative tools provide new commands and abilities for the owners of a server to do their job easier and faster." class="Tooltip" data-tipclass="resourceCategoryTooltip">Admin Tools</a>
+<span class="count">46</span>
+</li>
+<li class="">
+<a href="plugins/categories/anti-griefing-tools.4/" title="Anti-Griefing tools provide new ways to help combat unwanted players by a variety of different means." class="Tooltip" data-tipclass="resourceCategoryTooltip">Anti-Griefing Tools</a>
+<span class="count">19</span>
+</li>
+<li class="">
+<a href="plugins/categories/chat-related.5/" title="Chat related plugins help to advance your server with a new range of communication methods, from cross-server chat to chatting outside the game itself." class="Tooltip" data-tipclass="resourceCategoryTooltip">Chat Related</a>
+<span class="count">42</span>
+</li>
+<li class="">
+<a href="plugins/categories/developer-tools.6/" title="Developer tools are libraries and utilities to help plugin developers bring their crazy ideas to life." class="Tooltip" data-tipclass="resourceCategoryTooltip">Developer Tools</a>
+<span class="count">7</span>
+</li>
+<li class="">
+<a href="plugins/categories/economy.7/" title="Economies can provide a whole new dimension to your game. These plugins can encourage trading and partnerships between your players, or give meaning to their hard efforts in the mines." class="Tooltip" data-tipclass="resourceCategoryTooltip">Economy</a>
+<span class="count">16</span>
+</li>
+<li class="">
+<a href="plugins/categories/fun.8/" title="Fun is the most important aspect of any game. Keep your players (and yourself!) entertained by these plugins, and see the game from a whole new angle." class="Tooltip" data-tipclass="resourceCategoryTooltip">Fun</a>
+<span class="count">51</span>
+</li>
+<li class="">
+<a href="plugins/categories/general.9/" title="Some plugins provide a whole range of functionality they don't even know how to start listing it off. You can find those mega-plugins here which may upgrade your game into something new." class="Tooltip" data-tipclass="resourceCategoryTooltip">General</a>
+<span class="count">38</span>
+</li>
+<li class="">
+<a href="plugins/categories/informational.10/" title="For those who love knowing all sorts of useful tidbits about the server they're running, these plugins will tell you everything about your server that you never even thought to ask." class="Tooltip" data-tipclass="resourceCategoryTooltip">Informational</a>
+<span class="count">24</span>
+</li>
+<li class="">
+<a href="plugins/categories/mechanics.11/" title="Bring a whole new element of gameplay to your server with these new gameplay mechanics, and you'll wonder how you ever played without them." class="Tooltip" data-tipclass="resourceCategoryTooltip">Mechanics</a>
+<span class="count">11</span>
+</li>
+<li class="">
+<a href="plugins/categories/miscellaneous.12/" title="For those plugins that don't quite fit anywhere else, you can find them housed in here." class="Tooltip" data-tipclass="resourceCategoryTooltip">Miscellaneous</a>
+<span class="count">10</span>
+</li>
+<li class="">
+<a href="plugins/categories/teleportation.13/" title="Explore previously-unknown areas of your worlds with new means of travel. These plugins will help you get from place to place in a fun manner, you won't be complaining of distances any more!" class="Tooltip" data-tipclass="resourceCategoryTooltip">Teleportation</a>
+<span class="count">16</span>
+</li>
+<li class="">
+<a href="plugins/categories/world-editing-and-management.14/" title="With these plugins you can create entire new worlds or terraform sections of existing worlds. Your server just won't be the same without them!" class="Tooltip" data-tipclass="resourceCategoryTooltip">World Editing and Management</a>
+<span class="count">16</span>
+</li>
+<li class="">
+<a href="plugins/categories/world-generators.15/" title="These plugins can help your server by literally providing a whole new world to play with, shaped and formed to be exactly how you want it to be." class="Tooltip" data-tipclass="resourceCategoryTooltip">World Generators</a>
+<span class="count">3</span>
+</li>
+</ol>
+</div>
+<div class="secondaryContent miniResourceList">
+<h3><a href="plugins/?order=rating_weighted" class="concealed">Top Plugins</a></h3>
+<ol>
+<li class="visible">
+<a href="plugins/%E2%82%AC%C2%A2onom%C2%A5.30/" class="resourceTitle">€¢onom¥$</a>
+<a href="members/onebone.618/" class="username username">onebone</a>
+<div class="tagLine">The massive economy plugin with many features</div>
+</li>
+<li class="visible">
+<a href="plugins/randomitem.203/" class="resourceTitle">RandomItem</a>
+<a href="members/ldx.2379/" class="username username"><span class="style14">LDX</span></a>
+<div class="tagLine">Gives a random item on command and at set intervals.</div>
+</li>
+<li class="visible">
+<a href="plugins/trollplus.348/" class="resourceTitle"><span class="prefix prefixRed">Outdated</span> TrollPlus</a>
+<a href="members/ldx.2379/" class="username username"><span class="style14">LDX</span></a>
+<div class="tagLine">The only troll plugin you&#039;ll ever need.</div>
+</li>
+<li class="visible">
+<a href="plugins/iprotector.824/" class="resourceTitle">iProtector</a>
+<a href="members/ldx.2379/" class="username username"><span class="style14">LDX</span></a>
+<div class="tagLine">Keep your builds safe!</div>
+</li>
+<li class="visible">
+<a href="plugins/simpleauth.4/" class="resourceTitle"><span class="prefix prefixOrange">Official</span> SimpleAuth</a>
+<a href="members/shoghicp.2/" class="username username"><span class="style3">shoghicp</span></a>
+<div class="tagLine">Prevents people to impersonate an account, requiring registration and login when connecting.</div>
+</li>
+</ol>
+</div>
+<div class="secondaryContent avatarList">
+<h3><a href="plugins/authors" class="concealed">Most Active Authors</a></h3>
+<ol>
+<li>
+<a href="plugins/authors/falk.1229/" class="avatar Av1229s NoOverlay" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/e169db2a6c52a2c1f821dabf6bd75296?s=48&amp;d=https%3A%2F%2Fforums.pocketmine.net%2Fstyles%2Fflexile%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="Falk"/></a>
+<a href="plugins/authors/falk.1229/" class="username NoOverlay"><span class="style9">Falk</span></a>
+<div class="extraData"><a href="plugins/authors/falk.1229/">Plugins: 22</a></div>
+</li>
+<li>
+<a href="plugins/authors/evolsoft.16794/" class="avatar Av16794s NoOverlay" data-avatarhtml="true"><img src="data/avatars/s/16/16794.jpg?1410356668" width="48" height="48" alt="EvolSoft"/></a>
+<a href="plugins/authors/evolsoft.16794/" class="username NoOverlay"><span class="style14">EvolSoft</span></a>
+<div class="extraData"><a href="plugins/authors/evolsoft.16794/">Plugins: 13</a></div>
+</li>
+<li>
+<a href="plugins/authors/ldx.2379/" class="avatar Av2379s NoOverlay" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/f87daf3a38dd0ef3a0c00fa5919956db?s=48&amp;d=https%3A%2F%2Fforums.pocketmine.net%2Fstyles%2Fflexile%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="LDX"/></a>
+<a href="plugins/authors/ldx.2379/" class="username NoOverlay"><span class="style14">LDX</span></a>
+<div class="extraData"><a href="plugins/authors/ldx.2379/">Plugins: 13</a></div>
+</li>
+<li>
+<a href="plugins/authors/shoghicp.2/" class="avatar Av2s NoOverlay" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/45276f87d987288ab3f93e7261f1061e?s=48&amp;d=https%3A%2F%2Fforums.pocketmine.net%2Fstyles%2Fflexile%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="shoghicp"/></a>
+<a href="plugins/authors/shoghicp.2/" class="username NoOverlay"><span class="style3">shoghicp</span></a>
+<div class="extraData"><a href="plugins/authors/shoghicp.2/">Plugins: 13</a></div>
+</li>
+<li>
+<a href="plugins/authors/junyi00.3062/" class="avatar Av3062s NoOverlay" data-avatarhtml="true"><img src="data/avatars/s/3/3062.jpg?1387434010" width="48" height="48" alt="Junyi00"/></a>
+<a href="plugins/authors/junyi00.3062/" class="username NoOverlay">Junyi00</a>
+<div class="extraData"><a href="plugins/authors/junyi00.3062/">Plugins: 11</a></div>
+</li>
+</ol>
+</div>
+</div>
+<div class="resourceListMain">
+<div class="section">
+<h2 class="textHeading">
+<a class="viewAllFeatured" href="plugins/featured">View All</a>
+Featured Plugins
+</h2>
+<ol class="featuredResourceList">
+<li class="featuredResource">
+<div class="resourceImage">
+<a href="plugins/signshop.668/" class="resourceIcon"><img src="data/resource_icons/0/668.jpg?1411555856" alt=""/></a>
+</div>
+<div class="resourceInfo">
+<h3 class="title"><a href="plugins/signshop.668/">SignShop</a></h3>
+<div class="tagLine muted">Plugin to manage some Sign with virtual-money on the server.</div>
+<div class="details muted"><a href="members/xionbig.12583/" class="username">xionbig</a>,
+<a href="plugins/signshop.668/" class="faint"><span class="DateTime" title="Jun 27, 2014 at 1:37 PM">Jun 27, 2014</span></a>
+</div>
+</div>
+</li>
+<li class="featuredResource">
+<div class="resourceImage">
+<a href="plugins/pundler.673/" class="resourceIcon"><img src="data/resource_icons/0/673.jpg?1403883549" alt=""/></a>
+</div>
+<div class="resourceInfo">
+<h3 class="title"><a href="plugins/pundler.673/">Pundler</a></h3>
+<div class="tagLine muted">Manage your plugins simply and easily</div>
+<div class="details muted"><a href="members/minecrafterjpn.308/" class="username">MinecrafterJPN</a>,
+<a href="plugins/pundler.673/" class="faint"><span class="DateTime" title="Jun 27, 2014 at 12:04 PM">Jun 27, 2014</span></a>
+</div>
+</div>
+</li>
+<li class="featuredResource">
+<div class="resourceImage">
+<a href="plugins/pocketdockconsole.698/" class="resourceIcon"><img src="data/resource_icons/0/698.jpg?1404755135" alt=""/></a>
+</div>
+<div class="resourceInfo">
+<h3 class="title"><a href="plugins/pocketdockconsole.698/">PocketDockConsole</a></h3>
+<div class="tagLine muted">Administer your server like never before -- Because RCON was so retro</div>
+<div class="details muted"><a href="members/humerus.47/" class="username">Humerus</a>,
+<a href="plugins/pocketdockconsole.698/" class="faint"><span class="DateTime" title="Jul 3, 2014 at 3:30 PM">Jul 3, 2014</span></a>
+</div>
+</div>
+</li>
+<li class="featuredResource">
+<div class="resourceImage">
+<a href="plugins/paintmylawn.646/" class="resourceIcon"><img src="data/resource_icons/0/646.jpg?1402884408" alt=""/></a>
+</div>
+<div class="resourceInfo">
+<h3 class="title"><a href="plugins/paintmylawn.646/">PaintMyLawn</a></h3>
+<div class="tagLine muted">Allows placing colors or images in the grass</div>
+<div class="details muted"><a href="members/shoghicp.2/" class="username">shoghicp</a>,
+<a href="plugins/paintmylawn.646/" class="faint"><span class="DateTime" title="Jun 15, 2014 at 9:24 PM">Jun 15, 2014</span></a>
+</div>
+</div>
+</li>
+<li class="featuredResource">
+<div class="resourceImage">
+<a href="plugins/pocketmoney.63/" class="resourceIcon"><img src="data/resource_icons/0/63.jpg?1386167778" alt=""/></a>
+</div>
+<div class="resourceInfo">
+<h3 class="title"><a href="plugins/pocketmoney.63/">PocketMoney</a></h3>
+<div class="tagLine muted">the core economy system with many APIs</div>
+<div class="details muted"><a href="members/minecrafterjpn.308/" class="username">MinecrafterJPN</a>,
+<a href="plugins/pocketmoney.63/" class="faint"><span class="DateTime" title="Sep 25, 2013 at 7:28 AM">Sep 25, 2013</span></a>
+</div>
+</div>
+</li>
+<li class="featuredResource">
+<div class="resourceImage">
+<a href="plugins/simpleauth.4/" class="resourceIcon"><img src="data/resource_icons/0/4.jpg?1386104669" alt=""/></a>
+</div>
+<div class="resourceInfo">
+<h3 class="title"><a href="plugins/simpleauth.4/"><span class="prefix prefixOrange">Official</span> SimpleAuth</a></h3>
+<div class="tagLine muted">Prevents people to impersonate an account, requiring registration and login when connecting.</div>
+<div class="details muted"><a href="members/shoghicp.2/" class="username">shoghicp</a>,
+<a href="plugins/simpleauth.4/" class="faint"><span class="DateTime" title="Sep 8, 2013 at 6:45 AM">Sep 8, 2013</span></a>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section">
+<div class="resourceHeaders">
+<div class="extraLinks">
+<div class="Popup filterLink JsOnly">
+<a rel="Menu">Filters</a>
+<div class="Menu resourceFilterMenu" id="ResourceFilterMenu" data-contentsrc="plugins/filter-menu" data-contentdest="#ResourceFilterMenu > .primaryContent" data-insertfn="replaceAll">
+<div class="primaryContent">Loading...</div>
+</div>
+</div>
+</div>
+<ol class="tabs">
+<li class="active"><a href="plugins/">Latest Updates</a></li>
+<li class=""><a href="plugins/?order=resource_date">Newest Plugins</a></li>
+<li class=""><a href="plugins/?order=rating_weighted">Top Plugins</a></li>
+<li class=""><a href="plugins/?order=download_count">Most Downloaded</a></li>
+</ol>
+</div>
+<form action="plugins/inline-mod/switch" method="post" class="InlineModForm" data-cookieName="resources" data-controls="#InlineModControls" data-imodOptions="#ModerationSelect option">
+<ol class="resourceList">
+<li class="resourceListItem visible " id="resource-1060">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/grabbag.1060/" class="resourceIcon"><img src="data/resource_icons/1/1060.jpg?1427231177" alt=""/></a>
+<a href="members/aliuly.6674/" class="avatar Av6674s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/6/6674.jpg?1392158125" width="48" height="48" alt="aliuly"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/grabbag.1060/">GrabBag</a>
+<span class="version">1.4.1</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/aliuly.6674/" class="username">aliuly</a>,
+<a href="plugins/grabbag.1060/" class="faint"><span class="DateTime" title="Apr 3, 2015 at 2:02 PM">Apr 3, 2015</span></a>, <a href="plugins/categories/general.9/">General</a>
+</div>
+<div class="tagLine">
+A grab bag collection of commands and listener modules
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.00">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">5 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>2,159</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/grabbag.1060/updates" class="concealed"><abbr class="DateTime" data-time="1429489372" data-diff="1626" data-datestring="Apr 19, 2015" data-timestring="8:22 PM">Apr 19, 2015 at 8:22 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1043">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/signwarp.1043/" class="resourceIcon"><img src="data/resource_icons/1/1043.jpg?1425898192" alt=""/></a>
+<a href="members/aliuly.6674/" class="avatar Av6674s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/6/6674.jpg?1392158125" width="48" height="48" alt="aliuly"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/signwarp.1043/">SignWarp</a>
+<span class="version">1.3.0</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/aliuly.6674/" class="username">aliuly</a>,
+<a href="plugins/signwarp.1043/" class="faint"><span class="DateTime" title="Mar 17, 2015 at 6:13 PM">Mar 17, 2015</span></a>, <a href="plugins/categories/teleportation.13/">Teleportation</a>
+</div>
+<div class="tagLine">
+Warp between places using signs
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.83">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.8333334922791</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">6 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>22,848</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/signwarp.1043/updates" class="concealed"><abbr class="DateTime" data-time="1429489372" data-diff="1626" data-datestring="Apr 19, 2015" data-timestring="8:22 PM">Apr 19, 2015 at 8:22 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-879">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/customalerts.879/" class="resourceIcon"><img src="data/resource_icons/0/879.jpg?1419254672" alt=""/></a>
+<a href="members/evolsoft.16794/" class="avatar Av16794s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/16/16794.jpg?1410356668" width="48" height="48" alt="EvolSoft"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/customalerts.879/">CustomAlerts</a>
+<span class="version">v1.2</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/evolsoft.16794/" class="username">EvolSoft</a>,
+<a href="plugins/customalerts.879/" class="faint"><span class="DateTime" title="Dec 27, 2014 at 8:09 PM">Dec 27, 2014</span></a>, <a href="plugins/categories/chat-related.5/">Chat Related</a>
+</div>
+<div class="tagLine">
+Customize or hide alerts (join/leave messages, etc...)
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.57">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.5714287757874</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">7 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>4,716</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/customalerts.879/updates" class="concealed"><abbr class="DateTime" data-time="1429489372" data-diff="1626" data-datestring="Apr 19, 2015" data-timestring="8:22 PM">Apr 19, 2015 at 8:22 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1062">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/scorched.1062/" class="resourceIcon"><img src="data/resource_icons/1/1062.jpg?1427326391" alt=""/></a>
+<a href="members/aliuly.6674/" class="avatar Av6674s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/6/6674.jpg?1392158125" width="48" height="48" alt="aliuly"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/scorched.1062/">Scorched</a>
+<span class="version">1.3.0</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/aliuly.6674/" class="username">aliuly</a>,
+<a href="plugins/scorched.1062/" class="faint"><span class="DateTime" title="Apr 3, 2015 at 2:01 PM">Apr 3, 2015</span></a>, <a href="plugins/categories/fun.8/">Fun</a>
+</div>
+<div class="tagLine">
+The Mother of All Mini-Games
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.50">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">2 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>2,222</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/scorched.1062/updates" class="concealed"><abbr class="DateTime" data-time="1429143554" data-diff="347444" data-datestring="Apr 15, 2015" data-timestring="8:19 PM">Apr 15, 2015 at 8:19 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1042">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/manyworlds.1042/" class="resourceIcon"><img src="data/resource_icons/1/1042.jpg?1425896320" alt=""/></a>
+<a href="members/aliuly.6674/" class="avatar Av6674s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/6/6674.jpg?1392158125" width="48" height="48" alt="aliuly"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/manyworlds.1042/">ManyWorlds</a>
+<span class="version">1.3.2</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/aliuly.6674/" class="username">aliuly</a>,
+<a href="plugins/manyworlds.1042/" class="faint"><span class="DateTime" title="Mar 17, 2015 at 6:15 PM">Mar 17, 2015</span></a>, <a href="plugins/categories/world-editing-and-management.14/">World Editing and Management</a>
+</div>
+<div class="tagLine">
+Commands for MultiWorld functionality
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.44">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.4444446563721</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">9 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>14,760</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/manyworlds.1042/updates" class="concealed"><abbr class="DateTime" data-time="1429143554" data-diff="347444" data-datestring="Apr 15, 2015" data-timestring="8:19 PM">Apr 15, 2015 at 8:19 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-836">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/customchat.836/" class="resourceIcon"><img src="data/resource_icons/0/836.jpg?1425171029" alt=""/></a>
+<a href="members/praxthisnovcht.8190/" class="avatar Av8190s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/8/8190.jpg?1419815915" width="48" height="48" alt="Praxthisnovcht"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/?prefix_id=4" class="prefixLink" title="Show only plugins prefixed by 'Experimental'."><span class="prefix prefixYellow">Experimental</span> </a><a href="plugins/customchat.836/">CustomChat</a>
+<span class="version">1.4.5 Bêta</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/praxthisnovcht.8190/" class="username">Praxthisnovcht</a>,
+<a href="plugins/customchat.836/" class="faint"><span class="DateTime" title="Dec 21, 2014 at 12:28 PM">Dec 21, 2014</span></a>, <a href="plugins/categories/chat-related.5/">Chat Related</a>
+</div>
+<div class="tagLine">
+SetPrefix with different option
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.28">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.277777671814</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">18 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>30,684</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/customchat.836/updates" class="concealed"><abbr class="DateTime" data-time="1429098807" data-diff="392191" data-datestring="Apr 15, 2015" data-timestring="7:53 AM">Apr 15, 2015 at 7:53 AM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible featured" id="resource-63">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/pocketmoney.63/" class="resourceIcon"><img src="data/resource_icons/0/63.jpg?1386167778" alt=""/></a>
+<a href="members/minecrafterjpn.308/" class="avatar Av308s creatorMini" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/5371154e814325d2e76123c745bcf34b?s=48&amp;d=https%3A%2F%2Fforums.pocketmine.net%2Fstyles%2Fflexile%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="MinecrafterJPN"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<span class="featuredBanner">Featured</span>
+<h3 class="title">
+<a href="plugins/pocketmoney.63/">PocketMoney</a>
+<span class="version">4.0.1</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/minecrafterjpn.308/" class="username">MinecrafterJPN</a>,
+<a href="plugins/pocketmoney.63/" class="faint"><span class="DateTime" title="Sep 25, 2013 at 7:28 AM">Sep 25, 2013</span></a>, <a href="plugins/categories/economy.7/">Economy</a>
+</div>
+<div class="tagLine">
+the core economy system with many APIs
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.52">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.5238094329834</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">21 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>460,253</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/pocketmoney.63/updates" class="concealed"><abbr class="DateTime" data-time="1429098807" data-diff="392191" data-datestring="Apr 15, 2015" data-timestring="7:53 AM">Apr 15, 2015 at 7:53 AM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1045">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/firework-events.1045/" class="resourceIcon"><img src="data/resource_icons/1/1045.jpg?1425942727" alt=""/></a>
+<a href="members/hoyinm14mc.12225/" class="avatar Av12225s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/12/12225.jpg?1428979546" width="48" height="48" alt="hoyinm14mc"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/firework-events.1045/">Firework Events</a>
+<span class="version">0.1.1</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/hoyinm14mc.12225/" class="username">hoyinm14mc</a>,
+<a href="plugins/firework-events.1045/" class="faint"><span class="DateTime" title="Mar 17, 2015 at 5:45 PM">Mar 17, 2015</span></a>, <a href="plugins/categories/fun.8/">Fun</a>
+</div>
+<div class="tagLine">
+An extension plugin of Fireworks
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.60">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.5999999046326</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">5 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>5,367</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/firework-events.1045/updates" class="concealed"><abbr class="DateTime" data-time="1429030290" data-diff="460708" data-datestring="Apr 14, 2015" data-timestring="12:51 PM">Apr 14, 2015 at 12:51 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-619">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/armorspawn.619/" class="resourceIcon"><img src="data/resource_icons/0/619.jpg?1401648807" alt=""/></a>
+<a href="members/ldx.2379/" class="avatar Av2379s creatorMini" data-avatarhtml="true"><img src="https://secure.gravatar.com/avatar/f87daf3a38dd0ef3a0c00fa5919956db?s=48&amp;d=https%3A%2F%2Fforums.pocketmine.net%2Fstyles%2Fflexile%2Fxenforo%2Favatars%2Favatar_male_s.png" width="48" height="48" alt="LDX"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/armorspawn.619/">ArmorSpawn</a>
+<span class="version">3.0a</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/ldx.2379/" class="username">LDX</a>,
+<a href="plugins/armorspawn.619/" class="faint"><span class="DateTime" title="Jun 6, 2014 at 8:30 PM">Jun 6, 2014</span></a>, <a href="plugins/categories/mechanics.11/">Mechanics</a>
+</div>
+<div class="tagLine">
+Makes your players spawn with armor
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.71">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.7142858505249</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">7 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>94,269</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/armorspawn.619/updates" class="concealed"><abbr class="DateTime" data-time="1428982332" data-diff="508666" data-datestring="Apr 13, 2015" data-timestring="11:32 PM">Apr 13, 2015 at 11:32 PM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-912">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/nodropsblock.912/" class="resourceIcon"><img src="data/resource_icons/0/912.jpg?1421437793" alt=""/></a>
+<a href="members/praxthisnovcht.8190/" class="avatar Av8190s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/8/8190.jpg?1419815915" width="48" height="48" alt="Praxthisnovcht"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/nodropsblock.912/">NoDropsBlock</a>
+<span class="version">1.7.0 B</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/praxthisnovcht.8190/" class="username">Praxthisnovcht</a>,
+<a href="plugins/nodropsblock.912/" class="faint"><span class="DateTime" title="Feb 2, 2015 at 9:43 PM">Feb 2, 2015</span></a>, <a href="plugins/categories/general.9/">General</a>
+</div>
+<div class="tagLine">
+Does not fall Block / Items in an action
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="5.00">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">3 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>6,618</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/nodropsblock.912/updates" class="concealed"><abbr class="DateTime" data-time="1428925960" data-diff="565038" data-datestring="Apr 13, 2015" data-timestring="7:52 AM">Apr 13, 2015 at 7:52 AM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-909">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/blocklocations.909/" class="resourceIcon"><img src="data/resource_icons/0/909.jpg?1421356971" alt=""/></a>
+<a href="members/praxthisnovcht.8190/" class="avatar Av8190s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/8/8190.jpg?1419815915" width="48" height="48" alt="Praxthisnovcht"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/blocklocations.909/">BlockLocations</a>
+<span class="version">1.0.1</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/praxthisnovcht.8190/" class="username">Praxthisnovcht</a>,
+<a href="plugins/blocklocations.909/" class="faint"><span class="DateTime" title="Feb 2, 2015 at 8:21 PM">Feb 2, 2015</span></a>, <a href="plugins/categories/informational.10/">Informational</a>
+</div>
+<div class="tagLine">
+A block break to see its position
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="5.00">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">1 vote</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>6,270</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/blocklocations.909/updates" class="concealed"><abbr class="DateTime" data-time="1428925960" data-diff="565038" data-datestring="Apr 13, 2015" data-timestring="7:52 AM">Apr 13, 2015 at 7:52 AM</abbr></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-911">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/ifriend.911/" class="resourceIcon"><img src="data/resource_icons/0/911.jpg?1421272019" alt=""/></a>
+<a href="members/angelo-vidrio.5809/" class="avatar Av5809s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/5/5809.jpg?1421273736" width="48" height="48" alt="Angelo Vidrio"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/ifriend.911/">iFriend</a>
+<span class="version">1.0.4</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/angelo-vidrio.5809/" class="username">Angelo Vidrio</a>,
+<a href="plugins/ifriend.911/" class="faint"><span class="DateTime" title="Feb 2, 2015 at 9:39 PM">Feb 2, 2015</span></a>, <a href="plugins/categories/general.9/">General</a>
+</div>
+<div class="tagLine">
+Allows players to have friends!(More features Coming)
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.57">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.5714287757874</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">7 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>12,857</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/ifriend.911/updates" class="concealed"><span class="DateTime" title="Apr 12, 2015 at 11:52 AM">Apr 12, 2015</span></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1001">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/mytag.1001/" class="resourceIcon"><img src="data/resource_icons/1/1001.jpg?1424660701" alt=""/></a>
+<a href="members/gamecrafter.18785/" class="avatar Av18785s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/18/18785.jpg?1427769621" width="48" height="48" alt="Gamecrafter"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/?prefix_id=4" class="prefixLink" title="Show only plugins prefixed by 'Experimental'."><span class="prefix prefixYellow">Experimental</span> </a><a href="plugins/mytag.1001/">MyTag</a>
+<span class="version">v1.1.0</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/gamecrafter.18785/" class="username">Gamecrafter</a>,
+<a href="plugins/mytag.1001/" class="faint"><span class="DateTime" title="Mar 1, 2015 at 6:51 PM">Mar 1, 2015</span></a>, <a href="plugins/categories/informational.10/">Informational</a>
+</div>
+<div class="tagLine">
+Players get to control what is on their name tag!
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="2.67">
+<span class="star Full"></span><span class="star Full"></span><span class="star Half"></span><span class="star "></span><span class="star "></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">2.6666667461395</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">9 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>5,925</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/mytag.1001/updates" class="concealed"><span class="DateTime" title="Apr 12, 2015 at 12:16 AM">Apr 12, 2015</span></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1083">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/localchat.1083/" class="resourceIcon"><img src="data/resource_icons/1/1083.jpg?1427922169" alt=""/></a>
+<a href="members/aliuly.6674/" class="avatar Av6674s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/6/6674.jpg?1392158125" width="48" height="48" alt="aliuly"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/localchat.1083/">LocalChat</a>
+<span class="version">1.2.0</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/aliuly.6674/" class="username">aliuly</a>,
+<a href="plugins/localchat.1083/" class="faint"><span class="DateTime" title="Apr 3, 2015 at 1:18 PM">Apr 3, 2015</span></a>, <a href="plugins/categories/chat-related.5/">Chat Related</a>
+</div>
+<div class="tagLine">
+Chatting is localized to a certain area
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="5.00">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">5</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">2 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>1,912</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/localchat.1083/updates" class="concealed"><span class="DateTime" title="Apr 9, 2015 at 7:31 PM">Apr 9, 2015</span></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+<li class="resourceListItem visible " id="resource-1079">
+<div class="listBlock resourceImage">
+<div class="listBlockInner">
+<a href="plugins/worldprotect.1079/" class="resourceIcon"><img src="data/resource_icons/1/1079.jpg?1427849821" alt=""/></a>
+<a href="members/aliuly.6674/" class="avatar Av6674s creatorMini" data-avatarhtml="true"><img src="data/avatars/s/6/6674.jpg?1392158125" width="48" height="48" alt="aliuly"/></a>
+</div>
+</div>
+<div class="listBlock main">
+<div class="listBlockInner">
+<h3 class="title">
+<a href="plugins/worldprotect.1079/">WorldProtect</a>
+<span class="version">1.1.1</span>
+</h3>
+<div class="resourceDetails muted"><a href="members/aliuly.6674/" class="username">aliuly</a>,
+<a href="plugins/worldprotect.1079/" class="faint"><span class="DateTime" title="Apr 3, 2015 at 1:23 PM">Apr 3, 2015</span></a>, <a href="plugins/categories/anti-griefing-tools.4/">Anti-Griefing Tools</a>
+</div>
+<div class="tagLine">
+protect worlds from griefers, per world pvp, player limits and world borders
+</div>
+</div>
+</div>
+<div class="listBlock resourceStats">
+<div class="listBlockInner">
+<div class="rating">
+<dl>
+<dt class="prompt muted"></dt>
+<dd>
+<span class="ratings" title="4.71">
+<span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Full"></span><span class="star Half"></span>
+</span>
+<span class="RatingValue"><span class="Number" itemprop="average">4.7142858505249</span>/<span itemprop="best">5</span>,</span>
+<span class="Hint">7 votes</span>
+</dd>
+</dl>
+</div>
+<div class="pairsJustified">
+<dl class="resourceDownloads"><dt>Downloads:</dt> <dd>7,536</dd></dl>
+<dl class="resourceUpdated"><dt>Updated:</dt> <dd><a href="plugins/worldprotect.1079/updates" class="concealed"><span class="DateTime" title="Apr 9, 2015 at 6:32 PM">Apr 9, 2015</span></a></dd></dl>
+</div>
+</div>
+</div>
+</li>
+</ol>
+<div class="pageNavLinkGroup">
+<div class="linkGroup" style="display: none"><a href="javascript:" class="muted jsOnly DisplayIgnoredContent Tooltip" title="Show hidden content by ">Show Ignored Content</a></div>
+<div class="PageNav" data-page="1" data-range="2" data-start="2" data-end="6" data-last="20" data-sentinel="{{sentinel}}" data-baseurl="plugins/?page=%7B%7Bsentinel%7D%7D">
+<span class="pageNavHeader">Page 1 of 20</span>
+<nav>
+<a href="plugins/" class="currentPage " rel="start">1</a>
+<a class="PageNavPrev hidden"><b>&larr;</b></a> <span class="scrollable"><span class="items">
+<a href="plugins/?page=2" class="">2</a>
+<a href="plugins/?page=3" class="">3</a>
+<a href="plugins/?page=4" class="">4</a>
+<a href="plugins/?page=5" class="">5</a>
+<a href="plugins/?page=6" class="">6</a>
+</span></span> <a class="PageNavNext ">&rarr;</a>
+<a href="plugins/?page=20" class="">20</a>
+<a href="plugins/?page=2" class="text">Next &gt;</a>
+</nav>
+</div>
+</div>
+</form>
+</div>
+</div>
+</div>
+<div class="breadBoxBottom">
+<nav>
+<fieldset class="breadcrumb">
+<a href="misc/quick-navigation-menu" class="OverlayTrigger jumpMenuTrigger" data-cacheOverlay="true" title="Open quick navigation"> </a>
+<div class="boardTitle"><strong>PocketMine Forums</strong></div>
+<span class="crumbs">
+<span class="crust homeCrumb">
+<a href="https://forums.pocketmine.net/" class="crumb"><span>Home</span></a>
+<span class="arrow"><span></span></span>
+</span>
+<span class="crust selectedTabCrumb">
+<a href="https://forums.pocketmine.net/plugins/" class="crumb"><span>Plugins</span></a>
+<span class="arrow"><span>&gt;</span></span>
+</span>
+</span>
+</fieldset>
+</nav></div>
+</div>
+</div>
+</div>
+</div>
+<footer>
+<div class="footer">
+<div class="pageWidth">
+<div class="pageContent">
+ 
+<ul class="footerLinks">
+<li><a href="http://www.pocketmine.net/?advertise">Advertising</a></li>
+<li><a href="help/terms">Terms and Rules</a></li>
+<li><a href="https://www.pocketmine.net/?privacy">Privacy Policy</a></li>
+<li><a href="help/">Help</a></li>
+<li><a href="https://forums.pocketmine.net/" class="homeLink">Home</a></li>
+<li><a href="/plugins/#navigation" class="topLink">Top</a></li>
+<li><a href="forums/-/index.rss" rel="alternate" class="globalFeed" target="_blank" title="RSS feed for PocketMine Forums">RSS</a></li>
+</ul>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+<div class="footerLegal">
+<div class="pageWidth">
+<div class="pageContent">
+<div id="copyright">
+<a href="http://xenforo.com" class="concealed">Forum software by XenForo&trade; <span>&copy;2010-2014 XenForo Ltd.</span></a>
+<br>An <a href="http://www.audentio.com" rel="nofollow" title="XenForo themes">Audentio Design</a> design creation.
+</div>
+<span class="helper"></span>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+$(".minecraftHead").each(function(index){
+	var canvas = this;
+	var name = $(canvas).attr("title");
+	var img = new Image();
+	img.src = "https://s3.amazonaws.com/MinecraftSkins/" + name + ".png";
+	img.onload = function(){
+		var ctx = canvas.getContext("2d");
+		ctx.imageSmoothingEnabled = false;
+		ctx.webkitImageSmoothingEnabled = false;
+		ctx.mozImageSmoothingEnabled = false;
+		ctx.drawImage(img, 8, 8, 8, 8, 0, 0, canvas.getAttribute("width"), canvas.getAttribute("height"));
+		ctx.drawImage(img, 40, 8, 8, 8, 0, 0, canvas.getAttribute("width"), canvas.getAttribute("height"));
+	};
+	img.onerror = function(){
+		img.src = "https://minecraft.net/images/char.png";
+	}
+});
+</script>
+</footer>
+<script>
+
+
+jQuery.extend(true, XenForo,
+{
+	visitor: { user_id: 21941 },
+	serverTimeInfo:
+	{
+		now: 1429490998,
+		today: 1429416000,
+		todayDow: 0
+	},
+	_lightBoxUniversal: "0",
+	_enableOverlays: "1",
+	_animationSpeedMultiplier: "1.5",
+	_overlayConfig:
+	{
+		top: "10%",
+		speed: 300,
+		closeSpeed: 150,
+		mask:
+		{
+			color: "rgb(0, 0, 0)",
+			opacity: "0.8",
+			loadSpeed: 300,
+			closeSpeed: 150
+		}
+	},
+	_ignoredUsers: [],
+	_loadedScripts: {"nat_public_css":true,"resource_list":true,"resource_list_mini":true,"rating":true},
+	_cookieConfig: { path: "/", domain: "", prefix: "xf_"},
+	_csrfToken: "21941,1429490998,8b445de5fd2916a8e6e2a93aac9cc1b170f8601d",
+	_csrfRefreshUrl: "login/csrf-token-refresh",
+	_jsVersion: "d243d450"
+});
+jQuery.extend(XenForo.phrases,
+{
+	cancel: "Cancel",
+
+	a_moment_ago:    "A moment ago",
+	one_minute_ago:  "1 minute ago",
+	x_minutes_ago:   "%minutes% minutes ago",
+	today_at_x:      "Today at %time%",
+	yesterday_at_x:  "Yesterday at %time%",
+	day_x_at_time_y: "%day% at %time%",
+
+	day0: "Sunday",
+	day1: "Monday",
+	day2: "Tuesday",
+	day3: "Wednesday",
+	day4: "Thursday",
+	day5: "Friday",
+	day6: "Saturday",
+
+	_months: "January,February,March,April,May,June,July,August,September,October,November,December",
+	_daysShort: "Sun,Mon,Tue,Wed,Thu,Fri,Sat",
+
+	following_error_occurred: "The following error occurred",
+	server_did_not_respond_in_time_try_again: "The server did not respond in time. Please try again.",
+	logging_in: "Logging in",
+	click_image_show_full_size_version: "Click this image to show the full-size version.",
+	show_hidden_content_by_x: "Show hidden content by {names}"
+});
+
+// Facebook Javascript SDK
+XenForo.Facebook.appId = "231856253677810";
+XenForo.Facebook.forceInit = false;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
